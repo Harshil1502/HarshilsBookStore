@@ -104,7 +104,10 @@ body {
     width: 100%;
 }
 
-
+input[type=checkbox]{
+    display:flow;
+    margin:2px;
+}
 
 #logreg-forms {
     width: 412px;
