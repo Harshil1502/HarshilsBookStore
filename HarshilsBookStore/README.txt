@@ -35,9 +35,37 @@
 
 **************
 * 22/03/2022 * 
-**   2011   **
+**   1051   **
 **************
 
 -> In Class of ASP.Net
--> Lets go with slids quickly.
--> 
+-> Lets go with slides quickly.
+-> Starting up with 1.4 ...
+
+
+**************
+**   1102   **
+**************
+
+-> Getting 34 Erorrs.....:(
+-> Lets try to sholve it..
+
+
+**************
+**   1112   **
+**************
+-> Solved 12 of them..
+-> Going to be fresh up...
+
+**************
+**   1130   **
+**************
+-> YaaaY.. Its been a lonngggg........ Solved all of them... Im Genius ...lol...
+-> and also, andrew was amazed by 29 commits... Lol have to save the project before leaving the class...
+
+
+**************
+**   1142   **
+**************
+-> So, Uploading to github...
+-> Logging Out...
