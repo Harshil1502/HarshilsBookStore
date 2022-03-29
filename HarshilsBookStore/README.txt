@@ -144,6 +144,18 @@
 -> I am genius.. ;)
 
 
+************** 
+**   2246   **
+**************
+-> Oh man, Another error.. another hour... So basically the error was in the startup.cs
+-> solved .. I didn't add the :IUnitOfWork referance in UnitOfWork.cs..
+-> Finally completed and now..
+-> Andrew's Slides are indicating a push on git.. Lets push it.
+
+
+
+
+
 
 ************************************************************************************************
 ***********************************              All Done			****************************

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace HarshilsBooks.DataAccess.Repository
 {
-    public class UnitOfWork             //Public method
+    public class UnitOfWork : IUnitOfWork            //Public method
     {
         private readonly ApplicationDbContext _db;
         
