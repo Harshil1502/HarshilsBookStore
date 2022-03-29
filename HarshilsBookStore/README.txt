@@ -93,6 +93,26 @@
 -> So built the solution successfully. And now moving on the next step.
 -> Oh, Man selected the wrong Project ...... Andrew Warned me in His PPTX. Lets change the Default Project to DataAccess and Upload it to the Github
 
+************** 
+**   1403   **
+**************
+-> Oh Man having an error from an hour ....
+->Just pushing it on the branch and will solve it to night.
+->Come on man...
+
+************** 
+**   2046  **
+**************
+->So back from work and school lets debug the code.
+-> Lets Start...
+
+
+************** 
+**   2057   **
+**************
+-> Oh, Maaaaaan I am too dumb.. I missed the Public word in Category.cs and Though I was getting that Error...
+->Lets Push it to the github now.
+
 ************************************************************************************************
 ***********************************              All Done			****************************
 ************************************************************************************************
