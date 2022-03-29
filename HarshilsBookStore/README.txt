@@ -113,6 +113,19 @@
 -> Oh, Maaaaaan I am too dumb.. I missed the Public word in Category.cs and Though I was getting that Error...
 ->Lets Push it to the github now.
 
+
+************** 
+**   2057   **
+**************
+-> Lets move on the part 2.2.
+
+************** 
+**   2115   **
+**************
+-> completed the Irepository and Now Saved and going to eat pizza...
+-> Lets push it to the git
+
+
 ************************************************************************************************
 ***********************************              All Done			****************************
 ************************************************************************************************
