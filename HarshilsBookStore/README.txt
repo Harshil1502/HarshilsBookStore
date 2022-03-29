@@ -132,6 +132,19 @@
 -> Will be back after playing a game.
 -> See You ;)
 
+
+**************
+* 29/03/2022 * 
+**   1710   **
+**************
+-> So, Finally Completed 2.2 Of Assignment 2 Part 2
+-> I got 3 errors which was harder to solve and spent almost like 20 mins and was just only because I did not made the ICategoryRepository Interface to Public...
+-> Although I solved It Now. 
+-> Lets uplod it to the git..
+-> I am genius.. ;)
+
+
+
 ************************************************************************************************
 ***********************************              All Done			****************************
 ************************************************************************************************
