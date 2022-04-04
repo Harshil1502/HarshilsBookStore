@@ -97,6 +97,7 @@
 -> So lets complete the Assignment Part-2
 -> So built the solution successfully. And now moving on the next step.
 -> Oh, Man selected the wrong Project ...... Andrew Warned me in His PPTX. Lets change the Default Project to DataAccess and Upload it to the Github
+-> Changed the 20220328164220_AddDefaultIdentityMigration.
 
 ************** 
 **   1403   **
