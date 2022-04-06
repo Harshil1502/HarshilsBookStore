@@ -31,20 +31,29 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
         {
             ProductVM productVM = new ProductVM()
             {
-               Product product = new Product(),
-               CategoryList = _unitOfWork.CoverType.GetAll().Select(i => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem)
-            }
+               Product = new Product(),
+                 CategoryList = _unitOfWork.Category.GetAll().Select(i => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+               {
+                   Text = i.Name,
+                   Value = i.Id.ToString()
+               }),
+               CoverTypeList = _unitOfWork.CoverType.GetAll().Select(i => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+               {
+                   Text = i.Name,
+                   Value = i.Id.ToString()
+               })
+            };
             if (id == null)
             {
-                return View(product);
+                return View(productVM);
             }
 
-            product = _unitOfWork.Product.Get(id.GetValueOrDefault());
-            if (product == null)
+            productVM.Product = _unitOfWork.Product.Get(id.GetValueOrDefault());
+            if (productVM.Product == null)
             {
-                return NotFound(product);
+                return NotFound();
             }
-            return View(product);
+            return View(productVM);
         }
 
         [HttpPost]
@@ -77,7 +86,7 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             //return NotFound
-            var allObj = _unitOfWork.Product.GetAll();
+            var allObj = _unitOfWork.Product.GetAll(includeProperties:"Category, CoverType");
             return Json(new { data = allObj });
 
         }
