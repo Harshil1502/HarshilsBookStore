@@ -27,7 +27,7 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
             return View();
         }
 
-        public IActionResult Upsert(int? id)
+        public IActionResult PUpsert(int? id)
         {
             ProductVM productVM = new ProductVM()
             {
@@ -51,21 +51,20 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
             productVM.Product = _unitOfWork.Product.Get(id.GetValueOrDefault());
             if (productVM.Product == null)
             {
-                return NotFound();
+                return NotFound(productVM);
             }
             return View(productVM);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Upsert(Product product)
+        public IActionResult PUpsert(Product product)
         {
             if (ModelState.IsValid)
             {
                 if (product.Id == 0)
                 {
                     _unitOfWork.Product.Add(product);
-                    _unitOfWork.Save();
                 }
                 else
                 {
@@ -73,7 +72,6 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
                 }
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
-
             }
             return View(product);
         }
@@ -97,7 +95,7 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
             var objFromDb = _unitOfWork.Product.Get(id);
             if (objFromDb == null)
             {
-                return Json(new { success = true, message = "Erroe while Deleting" });
+                return Json(new { success = true, message = "Error while Deleting" });
             }
             _unitOfWork.Product.Remove(objFromDb);
             _unitOfWork.Save();

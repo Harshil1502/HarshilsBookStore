@@ -181,8 +181,68 @@
 -> Built the projetct successfully and now moving on Part 3.
 -> Lets start with a pushing this readme to github.
 
+************** 
+**   2330   **
+**************
+-> Just created Migration for CoverType and The time Stamp is: 20220404232901
+-> So we will left it here and will be back tomorrow..
+-> Peace.
+
+**************
+* 5/04/2022 * 
+**   2007   **
+**************
+-> So lets solve some errors. It is in Category file..
+
+************** 
+**	2044    **
+**************
+-> SO I solved it but my old migration is now removed and I have to add a new migration :[
+-> old time stamp: 20220327164220
+-> new time stamp: 20220405203410
+-> Now 3.1 is finaly completed and now I am going to move on 3.2.
+-> Hustle give you grades ;)  ....
+
+************** 
+**	2107    **
+**************
+-> Yes just completed my 3.2(1) Which was in 1st section.
+-> had error while migration and was not been able to see my table in sql so have to create it manually.....:{
+-> So what i did was i visited SQL server created new table and at below i use some of my sql skills which was learned in PHP and Data Administration class..
+-> Now Section 1 is complete.
+
+************** 
+**	2125    **
+**************
+->So i did completed my section 2. 
+->In  which I did created new controller and Repo files for Products.
+->It was really easy....
+
+************** 
+**	2140    **
+**************
+-> Oh no... I was just checking every file if it is working or not because I was tring to solve the problem in Product> Upsert but found an old error back
+->Its again same error in Category file and have to remove and update in migration .... F****
+-> Please I dont want to add a new migration....
+
+************** 
+**	2146    **
+**************
+-> Have to add new migration and here are time stamps...F to Migration....
+-> old time stamp: 20220405203410
+-> new time stamp: 20220405214993
+-> please Don't do same thing tomorrow....
+-> Here I did completed my section 2 finally which was only required for part 3..
 
 
+************************************************************************************************************************
+*******************                    Assignment-2 Part3(Advancing to section 3)  		            ********************
+************************************************************************************************************************
+
+************** 
+**	2150    **
+**************
+-> So lets start section 3..
 
 
 ************************************************************************************************

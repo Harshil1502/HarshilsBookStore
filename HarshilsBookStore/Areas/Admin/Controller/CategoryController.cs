@@ -79,7 +79,7 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
             var objFromDb = _unitOfWork.Category.Get(id);
             if (objFromDb == null)
             {
-                return Json(new { success = true, message = "Erroe while Deleting" });
+                return Json(new { success = true, message = "Error while Deleting" });
             }
             _unitOfWork.Category.Remove(objFromDb);
             _unitOfWork.Save();
