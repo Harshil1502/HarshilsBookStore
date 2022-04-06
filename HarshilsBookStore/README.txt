@@ -244,6 +244,20 @@
 **************
 -> So lets start section 3..
 
+************** 
+**	2350    **
+**************
+-> Almost completd my section 3 but have to take a quick break for dinner and will be back..
+-> Everything is good no errors..
+
+**************
+* 06/04/2022 * 
+**   0030   **
+**************
+-> So finally completed My Whole Section 3
+-> but still unable to loacte create.. Whats the prblm?
+-> Will ask andrew tomorrow...
+-> Until Then Peace Out...
 
 ************************************************************************************************
 ***********************************              All Done			****************************
