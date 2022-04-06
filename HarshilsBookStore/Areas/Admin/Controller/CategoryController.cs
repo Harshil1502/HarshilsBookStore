@@ -47,7 +47,6 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
                 if (category.Id == 0)
                 {
                     _unitOfWork.Category.Add(category);
-                    _unitOfWork.Save();
                 }
                 else
                 {
@@ -79,7 +78,7 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
             var objFromDb = _unitOfWork.Category.Get(id);
             if (objFromDb == null)
             {
-                return Json(new { success = true, message = "Error while Deleting" });
+                return Json(new { success = true, message = "Erroe while Deleting" });
             }
             _unitOfWork.Category.Remove(objFromDb);
             _unitOfWork.Save();

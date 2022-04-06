@@ -22,7 +22,7 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
             return View();
         }
 
-        public IActionResult CvUpsert(int? id)
+        public IActionResult Upsert(int? id)
         {
             CoverType coverType = new CoverType();
             if (id == null)
@@ -40,14 +40,13 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult CvUpsert(CoverType coverType)
+        public IActionResult Upsert(CoverType coverType)
         {
             if (ModelState.IsValid)
             {
                 if (coverType.Id == 0)
                 {
                     _unitOfWork.CoverType.Add(coverType);
-                    _unitOfWork.Save();
                 }
                 else
                 {
@@ -84,7 +83,8 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
             _unitOfWork.CoverType.Remove(objFromDb);
             _unitOfWork.Save();
             return Json(new { success = true, message = "Delete Successful" });
-            #endregion
+
         }
+        #endregion
     }
 }
