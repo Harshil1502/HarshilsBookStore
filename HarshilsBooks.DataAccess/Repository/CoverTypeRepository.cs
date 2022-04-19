@@ -1,6 +1,6 @@
-﻿using HarshilsBooks.DataAccess.Repository.IRepository;
+﻿using HarshilsBookStore.DataAccess.Data;
+using HarshilsBooks.DataAccess.Repository.IRepository;
 using HarshilsBooks.Models;
-using HarshilsBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +12,7 @@ namespace HarshilsBooks.DataAccess.Repository
     public class CoverTypeRepository : Repository<CoverType>, ICoverTypeRepository
     {
         private readonly ApplicationDbContext _db;
+
         public CoverTypeRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
@@ -23,7 +24,6 @@ namespace HarshilsBooks.DataAccess.Repository
             if (objFromDb != null)
             {
                 objFromDb.Name = coverType.Name;
-                _db.SaveChanges();
             }
         }
     }

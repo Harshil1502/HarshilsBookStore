@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace HarshilsBooks.DataAccess.Repository.IRepository
 {
+
     public interface ICoverTypeRepository : IRepository<CoverType>
     {
         void Update(CoverType coverType);
-        void Remove(CoverType objFromDb);
     }
 }

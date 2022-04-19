@@ -1,18 +1,18 @@
-﻿using HarshilsBooks.DataAccess.Repository;
+﻿using HarshilsBookStore.DataAccess.Data;
 using HarshilsBooks.DataAccess.Repository.IRepository;
 using HarshilsBooks.Models;
-using HarshilsBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
 
 namespace HarshilsBooks.DataAccess.Repository
 {
-     public class CategoryRepository : Repository<Category>, ICategoryRepository
+    public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
         private readonly ApplicationDbContext _db;
+
         public CategoryRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
@@ -24,7 +24,6 @@ namespace HarshilsBooks.DataAccess.Repository
             if (objFromDb != null)
             {
                 objFromDb.Name = category.Name;
-                _db.SaveChanges();
             }
         }
     }

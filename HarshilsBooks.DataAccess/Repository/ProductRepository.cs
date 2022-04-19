@@ -1,6 +1,6 @@
-﻿using HarshilsBooks.DataAccess.Repository.IRepository;
+﻿using HarshilsBookStore.DataAccess.Data;
+using HarshilsBooks.DataAccess.Repository.IRepository;
 using HarshilsBooks.Models;
-using HarshilsBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +12,7 @@ namespace HarshilsBooks.DataAccess.Repository
     public class ProductRepository : Repository<Product>, IProductRepository
     {
         private readonly ApplicationDbContext _db;
+
         public ProductRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
@@ -20,22 +21,24 @@ namespace HarshilsBooks.DataAccess.Repository
         public void Update(Product product)
         {
             var objFromDb = _db.Products.FirstOrDefault(s => s.Id == product.Id);
-            if (objFromDb != null)  // save changes if not null
+            if (objFromDb != null)
             {
                 if (product.ImageUrl != null)
                 {
-                    objFromDb.ImageUrl = product.ImageUrl;      // add the check for ImageUrl
+                    objFromDb.ImageUrl = product.ImageUrl;
                 }
+
                 objFromDb.Title = product.Title;
                 objFromDb.Description = product.Description;
                 objFromDb.ISBN = product.ISBN;
                 objFromDb.Author = product.Author;
                 objFromDb.ListPrice = product.ListPrice;
+                objFromDb.Price = product.Price;
+                objFromDb.Price50 = product.Price50;
+                objFromDb.Price100 = product.Price100;
                 objFromDb.CategoryId = product.CategoryId;
-                objFromDb.CoverTypeId = product.CoverTypeId;    // all properties of Product object
-
+                objFromDb.CoverTypeId = product.CoverTypeId;
             }
         }
-
     }
 }
