@@ -281,8 +281,54 @@
 
 **************
 * 17/04/2022 * 
-**   2130   **
+**   1620   **
 **************
+-> oh I was slept with my lappy and now... I am commiting to github .... Sorry about that...;)
+->I Commited the changes to the git just now its time to move with the SD.cs in utility...
+->Lets start...
+
+
+************** 
+**	 1634   **
+**************
+-> had error while migration and was not been able to see my table in sql so have to create it manually.....:{
+-> So what i did was i visited SQL server created new table and at below i use some of my sql skills which was learned in PHP and Data Administration class..
+-> Now Section 1 is complete.
+->having an error in Migration and database...
+->f.....
+->Now going to delete and readd the migration...
+
+************** 
+**	 1759   **
+**************
+-> Added new migrations
+-> New Time Stamps:
+
+-20220419210055_AddCoverTypeToDb
+-20220419225808_AddProductToDb
+-20220419230421_AddStoredProcForCoverType
+-20220419235201_AddValidationToProduct
+
+-> The erros is solved now move to the Home Controller
+
+
+************** 
+**	 1849   **
+**************
+->In  which I did created new controller and Repo files for Products.
+->It was really easy....
+-> Added the Home Controller and Modified Index.cshtml..
+-> Lets Commit the changes and push to the git..
+
+
+
+************** 
+**	 1855   **
+**************
+-> Updated the Readme...
+-> lets push to the git...
+
+
 
 ************************************************************************************************
 ***********************************              All Done			****************************
