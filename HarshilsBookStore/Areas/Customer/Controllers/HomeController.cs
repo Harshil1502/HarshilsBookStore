@@ -1,16 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using HarshilsBooks.DataAccess.Repository.IRepository;
+﻿using HarshilsBooks.DataAccess.Repository.IRepository;
 using HarshilsBooks.Models;
 using HarshilsBooks.Models.ViewModels;
+using HarshilsBookStore.Models.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using HarshilsBookStore.Models.ViewModels;
 
-namespace HarshilsBookstore.Area.Customer.Controllers
+namespace HarshilsBooks.Ares.Customer.Controllers
 {
     [Area("Customer")]
     public class HomeController : Controller
