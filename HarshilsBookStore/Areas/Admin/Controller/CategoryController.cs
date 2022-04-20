@@ -6,12 +6,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace HarshilsBookStore.Areas.Admin.Controllers
+namespace HarshilsBooks.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
+
         public CategoryController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
@@ -27,13 +28,14 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
             Category category = new Category();
             if (id == null)
             {
+                // this is for create
                 return View(category);
             }
-
+            // this is for edit
             category = _unitOfWork.Category.Get(id.GetValueOrDefault());
             if (category == null)
             {
-                return NotFound(category);
+                return NotFound();
             }
             return View(category);
         }
@@ -54,22 +56,17 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
                 }
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
-
             }
             return View(category);
         }
 
-
-        // API Calls
         #region API CALLS
-        [HttpGet]
 
+        [HttpGet]
         public IActionResult GetAll()
         {
-            //return NotFound
             var allObj = _unitOfWork.Category.GetAll();
             return Json(new { data = allObj });
-
         }
 
         [HttpDelete]
@@ -78,12 +75,14 @@ namespace HarshilsBookStore.Areas.Admin.Controllers
             var objFromDb = _unitOfWork.Category.Get(id);
             if (objFromDb == null)
             {
-                return Json(new { success = true, message = "Erroe while Deleting" });
+                return Json(new { success = false, message = "Error while deleting" });
             }
             _unitOfWork.Category.Remove(objFromDb);
             _unitOfWork.Save();
             return Json(new { success = true, message = "Delete Successful" });
-            #endregion
         }
+
+        #endregion
+
     }
 }

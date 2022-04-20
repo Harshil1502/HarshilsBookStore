@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace HarshilsBookStore.DataAccess.Migrations
+namespace HarshilsBooks.DataAccess.Migrations
 {
     public partial class AddProductToDb : Migration
     {
